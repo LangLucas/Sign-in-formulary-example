@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de registro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="form">
+            <button class="xButton"><i class="fa-solid fa-x"></i></button>
+            <h1>Sign in to MyWebsite</h1>
+            <div class="box-form">
+                <input type="text" name="user_name" placeholder="Name or email" id="user_name">
+            </div>
+            <div class="box-form">
+                <input type="password" name="user_password" placeholder="Your password" id="user_password">
+            </div>
+            <!-- <div class="box-form">
+                <input type="text" name="user_lastname" placeholder="Lastname" id="user_lastname">
+            </div> -->
+            <div class="box-form">
+                <a class="link" href=""><p>Forgot password?</p></a>
+                <a class="link" href=""><p>Forgot username or email?</p></a>
+                <p style="margin: 10px;">or</p>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+    <!--Ventana modal -->
+    <div class="modal" id="modal">
+        <div class="modal-data">
+            <p id="modal-nombre">Nombre</p>
+            <p id="modal-apellido">Apellido</p>
+            <p id="modal-socio">Socio</p>
+            <p id="modal-depo">Deporte</p>
+            <p id="modal-edad">Edad</p>
+            <input type="button" value="Confirmar" onclick="sendConsole()">
+            <input type="button" value="Cancelar" onclick="hideModal()">
+        </div>
+
+    </div>
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
