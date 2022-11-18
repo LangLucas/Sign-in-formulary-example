@@ -1,5 +1,5 @@
 * {
-  font-family: sans-serif;
+  font-family:Arial, Helvetica, sans-serif ;
   margin: 0;
   padding: 0;
   color: aliceblue;
@@ -46,7 +46,7 @@
 .form h1 {
   text-align: center;
 }
-
+/* ----- */
 .box-form {
   margin-top: 25px;
   text-align: center;
@@ -61,28 +61,37 @@ input {
   font-size: 1rem;
   border-radius: 10px;
 }
-
-
-/***** POP UP ***********/
-
-.modal {
-  background-color: rgb(0, 0, 0, 0.3);
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
+/* --------- */
+.box-link{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-
-.modal-data {
-  background-color: rgb(245, 245, 245);
-  width: 50%;
-  margin: 150px auto;
-
-  padding: 30px 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 4px rgb(0, 0, 0);
+/* --------- */
+.box-navegator{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  margin: 5px;
+  margin-bottom: 30px;
+}
+.btn_login_with{
+  display: flex;
+  justify-content: flex-start;
+  border-radius: 25px;
+  width: 210px;
+  margin: 5px;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 10px;   
+}
+.btn_login_with p{
+  padding-left: 10px;
+  color: black; 
+  font-weight: bolder;
 }
 
 /* --------------------------- */
@@ -108,5 +117,8 @@ input {
         position: absolute;
         left: 10px;
         top: 10px;
+      }
+    .box-navegator img{
+        width: 30px;
       }
 }
